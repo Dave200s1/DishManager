@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Pizza Margarita",
+        "price": 8.99
+    },
+    {
+        "id": 2,
+        "name": "Spagetti-Bolonese",
+        "price": 18.99
+    },
+    {
+        "id": 3,
+        "name": "Tiremissu",
+        "price": 4.99
+    },
+    {
+        "id": 4,
+        "name": "Wein",
+        "price": 6.99
+    },
+    {
+        "id": 5,
+        "name": "Lasagna",
+        "price": 12.5
+    }
+]
