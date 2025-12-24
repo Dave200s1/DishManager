@@ -6,20 +6,7 @@ header("Content-Type: application/json");
 //$menuFile = __DIR__ . "/menu.json"; Old
 require_once __DIR__ . "/database.php"; //Datenbank inkludieren
 
-// Menü  initialisieren
-/*
-if (file_exists($menuFile)) {
-    $menu = json_decode(file_get_contents($menuFile), true);
-} else {
-    $menu = [
-        ["id" => 1, "name" => "Pizza Margarita", "price" => 8.99],
-        ["id" => 2, "name" => "Spagetti-Bolonese", "price" => 18.99],
-        ["id" => 3, "name" => "Tiramisu", "price" => 4.99],
-        ["id" => 4, "name" => "Wein", "price" => 6.99],
-    ];
-    file_put_contents($menuFile, json_encode($menu, JSON_PRETTY_PRINT));
-}
-*/
+
 // Routing
 $route  = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
 $method = $_SERVER['REQUEST_METHOD'];
@@ -128,4 +115,5 @@ switch ($method) {
     default:
         http_response_code(405);
         echo json_encode(["error" => "Method not allowed"]);
+
 }
